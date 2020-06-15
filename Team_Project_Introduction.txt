@@ -1,0 +1,32 @@
+main 화면 구현
+save slot --> save 파일 선택, profile 유저
+
+각 profile 별로 진행도 설정
+새로하기
+불러오기
+
+메인화면
+1. 이어하기
+  - 1. 진행도(게임 진행도)
+
+2. 새 게임 시작하기
+  - 1. 기존에 있던 save file 날라가기
+
+3. 설정
+  - 1. 음량 조절
+  - 2. 마우스 감도 조절
+
+
+새 게임 시작
+- 1. 설정
+- 2. 새 게임
+- 3. 인트로 --> 스테이지 9개 
+   -> 스테이지 3개
+   -> 컷씬 (쉬어가기)
+   -> 스테이지 3개
+   -> 컷씬 (쉬어가기)
+   -> 스테이지 3개
+   -> 엔딩
+
+Include Intro Scene and Ending Scene
+--> Totally it needs 15 Scenes for this Project.
