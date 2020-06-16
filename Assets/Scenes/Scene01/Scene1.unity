@@ -764,8 +764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalItemCount: 1
   stage: 0
-  stageCountText: {fileID: 0}
-  playerCountText: {fileID: 0}
+  stageCountText: {fileID: 1320691419}
+  playerCountText: {fileID: 984867353}
 --- !u!65 &678171654
 BoxCollider:
   m_ObjectHideFlags: 0

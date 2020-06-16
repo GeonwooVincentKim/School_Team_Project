@@ -25,7 +25,7 @@ public class GameManagerLogic : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(stage);
+            //SceneManager.LoadScene(stage);
         }
     }
 }

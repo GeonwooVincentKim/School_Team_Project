@@ -14,6 +14,7 @@ public class IntroScene : MonoBehaviour
     public void ChangetoFirstScene()
     {
         SceneManager.LoadScene("Scene1");
+        
     }
 
     // Go to Settings_Scene when User click 'Settings' Button. 
