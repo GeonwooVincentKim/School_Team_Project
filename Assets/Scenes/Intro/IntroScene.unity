@@ -1031,6 +1031,7 @@ GameObject:
   - component: {fileID: 2009649465}
   - component: {fileID: 2009649464}
   - component: {fileID: 2009649463}
+  - component: {fileID: 2009649466}
   m_Layer: 5
   m_Name: Creator
   m_TagString: Untagged
@@ -1099,7 +1100,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2009649464}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2009649466}
+        m_MethodName: ChangetoSettingsScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2009649464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,3 +1149,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009649461}
   m_CullTransparentMesh: 0
+--- !u!114 &2009649466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009649461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956729137302c62468059c0a90c8512a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Start: {fileID: 1925684436}
+  Settings: {fileID: 2009649463}
+  Exit: {fileID: 1520653781}

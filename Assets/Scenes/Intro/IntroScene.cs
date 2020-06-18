@@ -14,13 +14,12 @@ public class IntroScene : MonoBehaviour
     public void ChangetoFirstScene()
     {
         SceneManager.LoadScene("Scene1");
-        
     }
 
-    // Go to Settings_Scene when User click 'Settings' Button. 
+    // Go to Creator_Scene when User click 'Creator' Button. 
     public void ChangetoSettingsScene()
     {
-        SceneManager.LoadScene("Settings");
+        SceneManager.LoadScene("Creator");
     }
 
     // Finish the game when User click 'Exit' Button.
