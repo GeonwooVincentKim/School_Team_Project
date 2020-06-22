@@ -14,6 +14,7 @@ public class IntroScene : MonoBehaviour
     public void ChangetoFirstScene()
     {
         SceneManager.LoadScene("Scene1");
+        //SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
     }
 
     // Go to Creator_Scene when User click 'Creator' Button. 
@@ -25,6 +26,7 @@ public class IntroScene : MonoBehaviour
     // Finish the game when User click 'Exit' Button.
     public void GameExit()
     {
-        
+        Debug.Log("Quit");
+        Application.Quit();
     }
 }

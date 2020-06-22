@@ -8,6 +8,7 @@ public class PlayerBall : MonoBehaviour
     public int itemCount;
     public GameManagerLogic manager;
 
+    GameManagerLogic Logic;
     Rigidbody rigid;
     AudioSource Audio;
 
@@ -42,16 +43,18 @@ public class PlayerBall : MonoBehaviour
                 // Change the Scene when Scene number is 4(or 8, 11)
                 if (manager.stage == 4 || manager.stage == 8 || manager.stage == 11)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene("Rest_Scene01");
                 }
                 else
                 {
-                    SceneManager.LoadScene(manager.stage + 1);
+                    
+                    SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
                 }
             }
             else
             {
-                SceneManager.LoadScene(manager.stage);
+                //SceneManager.LoadScene("IntroScene");
+                SceneManager.LoadScene("Scene" + manager.stage.ToString());
             }
         }
     }
