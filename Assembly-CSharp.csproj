@@ -68,6 +68,7 @@
     <Compile Include="Assets\PlayerBall.cs" />
     <Compile Include="Assets\Scenes\Intro\IntroScene.cs" />
     <Compile Include="Assets\Scenes\Other\Creator.cs" />
+    <Compile Include="Assets\Scenes\Rest\RestScene01.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
