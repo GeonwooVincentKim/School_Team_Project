@@ -41,23 +41,23 @@ public class PlayerBall : MonoBehaviour
             if(itemCount == manager.TotalItemCount)
             {
                 SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
-
-                //if (manager.stage == 3)
-                //{
-                //    SceneManager.LoadScene("Rest_Scene01");
-                //}
-                //else if (manager.stage == 7 || manager.stage == 11)
-                //{
-                //    SceneManager.LoadScene("Rest_Scene02");
-                //}
-                //else
-                //{ 
-                //    //SceneManager.LoadScene("Rest_Scene01");
-                //}
             }
             else
             {
-                // Change the Scene when Scene number is 3(or 7, 11)
+                /*
+                  Change the Scene when Scene number is 4(or 7, 10)
+
+                  The Scene Structor consists of 9 Stage, 
+                  Left Panel is consists of Scene Name, and
+                  Right Panel is consists of Real Scene Number.
+
+                  For example, It looks like..
+                  Intro = 1, Stage1 = 2, Stage2 = 3, Stage3 = 4.
+                */
+                // Intro = 1
+                // Stage1 = 2
+                // Stage2 = 3
+                // Stage3 = 4
                 if (manager.stage == 4)
                 {
                     SceneManager.LoadScene("Rest_Scene01");

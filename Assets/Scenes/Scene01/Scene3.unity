@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876589ca973d0424abce35b527bca1b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalItemCount: 2
+  TotalItemCount: 3
   stage: 4
   stageCountText: {fileID: 775096280}
   playerCountText: {fileID: 245338831}
