@@ -40,21 +40,30 @@ public class PlayerBall : MonoBehaviour
         {
             if(itemCount == manager.TotalItemCount)
             {
-                // Change the Scene when Scene number is 4(or 8, 11)
-                if (manager.stage == 4 || manager.stage == 8 || manager.stage == 11)
+                SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
+
+                //if (manager.stage == 3)
+                //{
+                //    SceneManager.LoadScene("Rest_Scene01");
+                //}
+                //else if (manager.stage == 7 || manager.stage == 11)
+                //{
+                //    SceneManager.LoadScene("Rest_Scene02");
+                //}
+                //else
+                //{ 
+                //    //SceneManager.LoadScene("Rest_Scene01");
+                //}
+            }
+            else
+            {
+                // Change the Scene when Scene number is 3(or 7, 11)
+                if (manager.stage == 4)
                 {
                     SceneManager.LoadScene("Rest_Scene01");
                 }
                 else
-                {
-                    
-                    SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
-                }
-            }
-            else
-            {
-                //SceneManager.LoadScene("IntroScene");
-                SceneManager.LoadScene("Scene" + manager.stage.ToString());
+                    SceneManager.LoadScene("Scene" + manager.stage.ToString());
             }
         }
     }
