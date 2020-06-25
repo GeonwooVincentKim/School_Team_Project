@@ -8,14 +8,14 @@ public class PlayerBall : MonoBehaviour
     public int itemCount;
     public GameManagerLogic manager;
 
-    GameManagerLogic Logic;
+    // GameManagerLogic Logic;
     Rigidbody rigid;
-    AudioSource Audio;
+    //AudioSource Audio;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
-        Audio = GetComponent<AudioSource>();
+        //Audio = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -40,7 +40,17 @@ public class PlayerBall : MonoBehaviour
         {
             if(itemCount == manager.TotalItemCount)
             {
-                SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
+                Debug.Log(manager.TotalItemCount);
+                Debug.Log(itemCount);
+                if(manager.stage == 4)
+                {
+                    SceneManager.LoadScene("Rest_Scene01");
+                }
+                else
+                {
+                    //SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
+                    SceneManager.LoadScene(manager.stage + 1);
+                }
             }
             else
             {
@@ -58,12 +68,17 @@ public class PlayerBall : MonoBehaviour
                 // Stage1 = 2
                 // Stage2 = 3
                 // Stage3 = 4
-                if (manager.stage == 4)
-                {
-                    SceneManager.LoadScene("Rest_Scene01");
-                }
-                else
-                    SceneManager.LoadScene("Scene" + manager.stage.ToString());
+                //if (manager.stage == 4)
+                //{
+                //    SceneManager.LoadScene("Rest_Scene01");
+                //}
+                //else
+                //{
+                //    // SceneManager.LoadScene(manager.stage);
+                //    SceneManager.LoadScene("Scene" + manager.stage.ToString());
+                //}
+                //SceneManager.LoadScene("Scene" + manager.stage.ToString());
+                SceneManager.LoadScene(manager.stage);
             }
         }
     }
