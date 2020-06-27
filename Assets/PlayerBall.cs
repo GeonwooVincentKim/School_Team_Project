@@ -46,6 +46,14 @@ public class PlayerBall : MonoBehaviour
                 {
                     SceneManager.LoadScene("Rest_Scene01");
                 }
+                else if(manager.stage == 8)
+                {
+                    SceneManager.LoadScene("Rest_Scene02");
+                }
+                else if(manager.stage == 12)
+                {
+                    SceneManager.LoadScene("IntroScene");
+                }
                 else
                 {
                     //SceneManager.LoadScene("Scene" + (manager.stage + 1).ToString());
